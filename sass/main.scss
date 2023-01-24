@@ -1,11 +1,29 @@
 body{
-    background-color:blue;
+    background-image: url("../img/spaceships.gif");
+
 }
 
 .title{
     p{
         font-size: 5rem;
-        font-color: white;
+        color: yellow;
     }
 
 }
+.musiclinks{
+    p{
+        color:yellow
+    }
+    width: 50%;
+    margin: auto;
+}
+
+.menu{
+    width: 50%;
+    margin: auto;
+    a{
+        color:yellow
+    }
+}
+
+@import 'pedals';
