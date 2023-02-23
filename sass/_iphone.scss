@@ -1,12 +1,16 @@
 
 #iphonebackground{
   width: 100%;
-  margin: auto;
-  height: auto;
+   max-width: 700px;
+   height: auto;
+  
 }
 .iphonewrapper{
-  width: 100%;
-  margin: auto;
+  width:100%;
+   max-width: 700px;
+   margin: 0px auto;
+   margin-right: 100px;
+  
 }
 
 .app{
@@ -19,14 +23,14 @@
       }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 700px) {
   #iphonebackground{
     width: 100%;
     margin: auto;
     height: auto;
   }
   .iphonewrapper{
-    width: 40%;
+    width: 50%;
     margin: auto;
   }
 }
