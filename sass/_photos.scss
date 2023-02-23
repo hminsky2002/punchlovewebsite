@@ -16,10 +16,39 @@
     width:50%;
     margin:auto;
     img{
-        width:800px;
-        height: 400px;
-    margin:auto;
+        max-width: 800px;
+        max-height: 800px;
+        margin:auto;
     }
 }
-  
+.galleryPhoto{
+  &:hover { 
+    filter: brightness(50%); 
+  }
+  height: 100px;
+  width:auto;
+}
 
+@media (max-width: 700px) {
+  .mainImage {
+    width:80%;
+    margin:auto;
+    img{
+        width: 100%;
+        margin:auto;
+    }
+}
+.galleryPhoto{
+  &:hover { 
+    filter: brightness(50%); 
+  }
+  height: 60px;
+  width: 100px;
+}
+.myGallery {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+}
+
+}
