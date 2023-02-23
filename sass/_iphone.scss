@@ -1,9 +1,12 @@
-.iphone{
-    img{
-        width:50%;
-    margin:auto;
-    }
-    align-content: center;
+
+#iphonebackground{
+  width: 100%;
+  margin: auto;
+  height: auto;
+}
+.iphonewrapper{
+  width: 100%;
+  margin: auto;
 }
 
 .app{
@@ -14,4 +17,16 @@
       img:hover { 
         opacity: 1; 
       }
+}
+
+@media (min-width: 1250px) {
+  #iphonebackground{
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .iphonewrapper{
+    width: 40%;
+    margin: auto;
+  }
 }
