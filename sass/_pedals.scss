@@ -1,3 +1,16 @@
+.pedal{
+  max-width: 10%;
+  max-height: auto;
+  img{
+    max-width: 100%; 
+    height: auto; 
+    padding: none;
+    margin: none;
+  }
+}
+
+
+
 #pedal1 {
     position: absolute;
     z-index: 9;
@@ -6,6 +19,7 @@
   }
 
   #pedal2 {
+    max-width: 20%;
     position: absolute;
     z-index: 9;
     border: none;
@@ -31,47 +45,37 @@
   }
 
   #slot1{
-    position: absolute;
     border-style: dotted;
     border-color: yellow;
-    height: 100px;
-    width: 100px;
-    top: 400px;
-    left: 400px
+    width: 50%;
+    height: auto;
   }
   #slot2{
     position: absolute;
     border-style: dotted;
     border-color: yellow;
-    height: 100px;
-    width: 100px;
-    top: 400px;
-    left: 600px
+    width: 50%;
+    height: auto;
   }
   #slot3{
     position: absolute;
     border-style: dotted;
     border-color: yellow;
-    height: 100px;
-    width: 100px;
-    top: 400px;
-    left: 800px
+    width: 50%;
+    height: auto;
   }
   #slot4{
     position: absolute;
     border-style: dotted;
     border-color: yellow;
-    height: 100px;
-    width: 100px;
-    top: 400px;
-    left: 1000px
+    width: 50%;
+    height: auto;
   }
   #slot5{
     position: absolute;
     border-style: dotted;
     border-color: yellow;
-    height: 100px;
-    width: 100px;
-    top: 400px;
-    left: 1200px
+    width: 50%;
+    height: auto;
   }
+
