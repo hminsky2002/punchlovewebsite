@@ -45,37 +45,34 @@
   }
 
   #slot1{
-    border-style: dotted;
-    border-color: yellow;
-    width: 50%;
+    position: absolute;
+    width: 100%;
     height: auto;
   }
   #slot2{
     position: absolute;
-    border-style: dotted;
-    border-color: yellow;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   #slot3{
     position: absolute;
-    border-style: dotted;
-    border-color: yellow;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   #slot4{
     position: absolute;
-    border-style: dotted;
-    border-color: yellow;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
   #slot5{
     position: absolute;
-    border-style: dotted;
-    border-color: yellow;
-    width: 50%;
+    width: 100%;
     height: auto;
   }
 
+  .slot{
+    img{
+      width: 100%;
+      margin: auto;
+    }
+  }
