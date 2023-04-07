@@ -51,6 +51,8 @@ function checkCollision1() {
             p1ip = true;
             elem1.onmousedown = null
             elemList[i].classList.remove("empty")
+            elemList[i].getElementsByTagName('img')[0].src = elem1.getElementsByTagName('img')[0].src
+            elem1.remove()
           }
         }
 
@@ -76,6 +78,9 @@ function checkCollision2() {
           p2ip = true;
           elem1.onmousedown = null
           elemList[i].classList.remove("empty")
+          elemList[i].getElementsByTagName('img')[0].src = elem1.getElementsByTagName('img')[0].src
+          elem1.remove()
+
         }
       }
 
@@ -101,6 +106,9 @@ function checkCollision3() {
           p3ip = true;
           elem1.onmousedown = null
           elemList[i].classList.remove("empty")
+          elemList[i].getElementsByTagName('img')[0].src = elem1.getElementsByTagName('img')[0].src
+          elem1.remove()
+
         }
       }
 
@@ -125,6 +133,9 @@ function checkCollision4() {
           p4ip = true;
           elem1.onmousedown = null
           elemList[i].classList.remove("empty")
+          elemList[i].getElementsByTagName('img')[0].src = elem1.getElementsByTagName('img')[0].src
+          elem1.remove()
+
         }
       }
 
@@ -149,6 +160,9 @@ function checkCollision5() {
           p5ip = true;
           elem1.onmousedown = null
           elemList[i].classList.remove("empty")
+          elemList[i].getElementsByTagName('img')[0].src = elem1.getElementsByTagName('img')[0].src
+          elem1.remove()
+
         }
       }
 
