@@ -6,7 +6,7 @@ body{
 .title{
     p{
         font-size: 5rem;
-        color: yellow;
+        color: orange;
     }
 }
 
@@ -32,6 +32,32 @@ body{
         color: yellow;
         writing-mode: vertical-rl;
        
+    }
+}
+
+.button {
+
+    position:relative;
+
+    p {
+        color: orange;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        width: 1000px;
+        margin: 0 auto;
+        border: dashed;
+        border-color: lime;
+        background-color: white;
+        transition-duration: 0.4s;
+        padding: 40px 100px;
+    }
+
+    button:hover {
+        background-color: indigo;
     }
 }
 
