@@ -30,10 +30,10 @@
         its parent, but i think since the parent style is position: absolute it's not actually resizing.
         could be helpful too: https://stackoverflow.com/questions/50535103/twitter-embed-how-to-override-css-->
 
-    <div class="iphonewrapper" style="position: relative;">
-        <img id='iphonebackground' src="img/iphone2.png">
+    <div class="iphonewrappertwit" style="position: relative;">
+        <img id='iphonebackgroundtwit' src="img/iphone2.png">
         <div style="position: absolute; left: 28%; top: 12%; width: auto; height: auto;">
-            <a class="twitter-timeline" data-height="445" data-width="300" data-theme="dark" href="https://twitter.com/punchlovemusic?ref_src=twsrc%5Etfw">Tweets by punchlovemusic</a>
+            <a id="twitter" class="twitter-timeline" data-height="445" data-width="300" data-theme="dark" href="https://twitter.com/punchlovemusic?ref_src=twsrc%5Etfw">Tweets by punchlovemusic</a>
             <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </div>
     </div>
@@ -41,6 +41,7 @@
     <div class="sidetext" style="position: fixed; top: 0; left: 0;">
         <marquee direction="down" style="height:1000px"><p>twitter dot com</p><p>twitter dot com</p><p>twitter dot com</p></marquee>
     </div>
+    <script defer src="./scripts/twitter.js"></script>
 
 </body>
 
