@@ -30,7 +30,7 @@
         its parent, but i think since the parent style is position: absolute it's not actually resizing.
         could be helpful too: https://stackoverflow.com/questions/50535103/twitter-embed-how-to-override-css-->
 
-    <div class="iphonewrappertwit" style="position: relative;">
+    <div class="iphonewrappertwit" style="position: fixed; left: 25%">
         <img id='iphonebackgroundtwit' src="img/iphone2.png">
         <div style="position: absolute; left: 28%; top: 12%; width: auto; height: auto;">
             <a id="twitter" class="twitter-timeline" data-height="445" data-width="300" data-theme="dark" href="https://twitter.com/punchlovemusic?ref_src=twsrc%5Etfw">Tweets by punchlovemusic</a>
@@ -41,6 +41,11 @@
     <div class="sidetext" style="position: fixed; top: 0; left: 0;">
         <marquee direction="down" style="height:1000px"><p>twitter dot com</p><p>twitter dot com</p><p>twitter dot com</p></marquee>
     </div>
+
+    <div class="sidetext" style="position: fixed; top: 0; left: 80%">
+        <marquee direction="up" style="height:1000px"><p>twitter dot com</p><p>twitter dot com</p><p>twitter dot com</p></marquee>
+    </div>
+
     <script defer src="./scripts/twitter.js"></script>
 
 </body>
