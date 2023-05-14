@@ -10,7 +10,8 @@
    max-width: 700px;
    margin: 0px auto;
    margin-right: 100px;
-  
+   margin-top: 200px;
+   transform: scale(1.9);
 }
 
 
@@ -33,5 +34,7 @@
   .iphonewrapper{
     width: 50%;
     margin: auto;
+    transform: scale(1)
   }
 }
+
