@@ -1,0 +1,64 @@
+body{
+    background-image: url("../img/gif/spaceships.gif");
+
+}
+
+.title{
+    p{
+        font-size: 5rem;
+        color: orange;
+    }
+}
+
+.musiclinks{
+    p{
+        color:yellow
+    }
+    width: 50%;
+    margin: auto;
+}
+
+.menu{
+    width: 50%;
+    margin: auto;
+    a{
+        color:yellow
+    }
+}
+
+.sidetext {
+    p {
+        font-size: 5rem;
+        color: deepskyblue;
+        writing-mode: vertical-rl;
+       
+    }
+}
+
+.button {
+
+    position:relative;
+
+    p {
+        color: orange;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    button {
+        display: block;
+        width: 1000px;
+        margin: 0 auto;
+        border: dashed;
+        border-color: lime;
+        background-color: white;
+        transition-duration: 0.4s;
+        padding: 40px 100px;
+    }
+
+    button:hover {
+        background-color: indigo;
+    }
+}
+
+@import 'pedals','twitter','iphone','photos';

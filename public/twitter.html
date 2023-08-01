@@ -1,0 +1,60 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>TL</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <!-- can't quite figure out how to have the twitter embed adjust with the size of the screen.
+        according to this link (https://developer.twitter.com/en/docs/twitter-for-websites/timelines/overview)
+        the data-width and -height should set the maximum width and height, then inherit other settings from
+        its parent, but i think since the parent style is position: absolute it's not actually resizing.
+        could be helpful too: https://stackoverflow.com/questions/50535103/twitter-embed-how-to-override-css-->
+    
+
+    <!-- <div class="iphonewrapper" style="position: relative;">
+        <img id='iphonebackground' src="img/iphone2.png"> -->
+        <div class="iphone-container">
+            <div class="iphone-frame">
+              <div class="twitter-container">
+                <a id="twitter" class="twitter-timeline" data-theme="dark" href="https://twitter.com/punchlovemusic?ref_src=twsrc%5Etfw">Tweets by punchlovemusic</a>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+              </div>
+            </div>
+    
+    <!-- </div> -->
+
+    <div class="sidetext" style="position: fixed; top: 0; left: 0;">
+        <marquee direction="down" style="height:1000px"><p>twitter dot com</p><p>twitter dot com</p><p>twitter dot com</p></marquee>
+    </div>
+
+    <div class="sidetext" style="position: fixed; top: 0; left: 80%">
+        <marquee direction="up" style="height:1000px"><p>twitter dot com</p><p>twitter dot com</p><p>twitter dot com</p></marquee>
+    </div>
+
+    <script defer src="./scripts/twitter.js"></script>
+   
+</body>
+
+</html>

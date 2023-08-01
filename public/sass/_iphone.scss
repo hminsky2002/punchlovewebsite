@@ -1,0 +1,40 @@
+
+#iphonebackground{
+  width: 100%;
+   max-width: 700px;
+   height: auto;
+  
+}
+.iphonewrapper{
+  width:100%;
+   max-width: 700px;
+   margin: 0px auto;
+   margin-right: 100px;
+   margin-top: 200px;
+   transform: scale(1.9);
+}
+
+
+.app{
+    img { 
+        opacity: 0.7; 
+      } 
+      
+      img:hover { 
+        opacity: 1; 
+      }
+}
+
+@media (min-width: 700px) {
+  #iphonebackground{
+    width: 100%;
+    margin: auto;
+    height: auto;
+  }
+  .iphonewrapper{
+    width: 50%;
+    margin: auto;
+    transform: scale(1)
+  }
+}
+

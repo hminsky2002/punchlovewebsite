@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mirror mirror</title>
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <style>
+        h1 {
+            font-family: sans-serif;
+            color: darkgreen;
+        }
+
+        body {
+            margin: 50px;
+        }
+
+        #container {
+            width: 500px;
+            height: 375px;
+            border: 10px #ff0000 solid;
+        }
+
+        #videoElement {
+            width: 500px;
+            height: 375px;
+            background-color: antiquewhite;
+            filter: saturate(0);
+            filter: invert(0);
+            filter: grayscale(0);
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>This is a mirror.</h1>
+
+    <button id="greyscale" style="background-color: darkgray; margin: 5px;">old-school</button>
+    <button id="negative" style="background-color: darkgray; margin: 5px;">negative</button>
+
+
+
+    <div id="container">
+        <video autoplay id="videoElement">
+        </video>
+    </div>
+
+    <a href="yoda.html" style="position: absolute; left:45%; top:50%">
+        <img src="img/gif/yoda.gif" width="10%" height="10%">
+    </a>
+
+    <a href="index.html" style="position: absolute; left:60%; top:40%">
+        <img src="img/gif/spaceships.gif" width="15%" height="15%">
+    </a>
+
+    <script>
+        let video = document.querySelector("#videoElement");
+
+        if (navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: true })
+                .then(function (stream) {
+                    video.srcObject = stream;
+                })
+                .catch(function (error) {
+                    console.log("something went wrong.");
+                })
+        } else {
+            console.log("getUserMedia not supported.");
+        }
+
+        const greyscale = document.querySelector('#greyscale');
+        greyscale.addEventListener('click', () => {
+            if (video.style.filter == 'grayscale(1)') {
+                video.style.filter = 'grayscale(0)';
+            }
+            else {
+                video.style.filter = 'grayscale(1)';
+            }
+        })
+
+        const negative = document.querySelector('#negative');
+        negative.addEventListener('click', () => {
+            if (video.style.filter == 'invert(1)') {
+                video.style.filter = 'invert(0)';
+            }
+            else {
+                video.style.filter = 'invert(1)';
+            }
+        })
+    </script>
+
+</body>
+</html>
