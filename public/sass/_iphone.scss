@@ -6,12 +6,15 @@
   
 }
 .iphonewrapper{
-  width:100%;
-   max-width: 700px;
-   margin: 0px auto;
-   margin-right: 100px;
-   margin-top: 200px;
-   transform: scale(1.9);
+    position: absolute;
+    display: flex;
+    width:100%;
+    max-width: 700px;
+    padding: 10vh;
+    margin: 0px auto;
+    margin-right: 100px;
+    margin-top: 200px;
+    transform: scale(1.9);
 }
 
 
