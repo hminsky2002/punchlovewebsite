@@ -1,0 +1,105 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.redirect {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    background-image: url("../img/gif/redirect.gif");
+    background-size: cover;
+}
+
+.channels {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    background-image: url("../img/gif/channels.gif");
+    background-size: cover;
+    justify-content: right;
+}
+
+.phoneLink {
+    display: flex;
+    position: absolute;
+    justify-content: right;
+    top: 10%;
+    width: 20%;
+}
+
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    color: #fff;
+    z-index: 2;
+    background-image: url("../img/gif/birdsong-gif-crop.gif");
+    background-size: cover;
+}
+
+.showcase video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /*opacity: 0.8;*/
+}
+
+.showcase gif {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    /*opacity: 0.8;*/
+}
+
+.menu {
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 20, 60, .6);
+}
+
+.text {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    
+}
+
+.text img {
+
+}
+
