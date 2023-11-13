@@ -1,6 +1,6 @@
 
 #iphonebackground{
-  width: 100%;
+   width: 100%;
    max-width: 700px;
    height: auto;
   
@@ -8,13 +8,13 @@
 .iphonewrapper{
     position: absolute;
     display: flex;
-    width:100%;
+    width: 100%;
     max-width: 700px;
     padding: 10vh;
     margin: 0px auto;
     margin-right: 100px;
     margin-top: 200px;
-    transform: scale(1.9);
+    transform: scale(1.5);
 }
 
 
@@ -37,7 +37,7 @@
   .iphonewrapper{
     width: 50%;
     margin: auto;
-    transform: scale(1)
+    transform: scale(1);
   }
 }
 
