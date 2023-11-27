@@ -92,6 +92,7 @@
     z-index: 10;
     display: inline-block;
     min-width: 100px;
+    max-width: 99%;
 
     img {
         opacity: 0.8;
@@ -112,6 +113,11 @@
     }
     .phoneLink {
         width: 65%;
+    }
+    .text {
+        img {
+            opacity: 1;
+        }
     }
 }
 
