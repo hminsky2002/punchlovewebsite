@@ -1,19 +1,6 @@
-<!--
-________  ___  ___  ________   ________  ___  ___  ___       ________  ___      ___ _______      
-|\   __  \|\  \|\  \|\   ___  \|\   ____\|\  \|\  \|\  \     |\   __  \|\  \    /  /|\  ___ \     
-\ \  \|\  \ \  \\\  \ \  \\ \  \ \  \___|\ \  \\\  \ \  \    \ \  \|\  \ \  \  /  / | \   __/|    
- \ \   ____\ \  \\\  \ \  \\ \  \ \  \    \ \   __  \ \  \    \ \  \\\  \ \  \/  / / \ \  \_|/__  
-  \ \  \___|\ \  \\\  \ \  \\ \  \ \  \____\ \  \ \  \ \  \____\ \  \\\  \ \    / /   \ \  \_|\ \ 
-   \ \__\    \ \_______\ \__\\ \__\ \_______\ \__\ \__\ \_______\ \_______\ \__/ /     \ \_______\
-    \|__|     \|_______|\|__| \|__|\|_______|\|__|\|__|\|_______|\|_______|\|__|/       \|_______|
-                                                                                                  
-Webpage built and maintained by Harry Minsky and Joey Kinnan (c) 2023
-                                                                                                  
--->
+<!DOCTYPE html>
 
-<!doctype html>
-<html class="no-js" lang="">
-
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8">
     <title>░▒ Punchlove.net ▒░</title>
@@ -27,7 +14,7 @@ Webpage built and maintained by Harry Minsky and Joey Kinnan (c) 2023
     <meta name="keywords" content="Music, Shoegaze, New York, Punchlove, Band, Indepedent">
     <meta name="author" content="Punchlove">
 
-    <link rel="stylesheet" href="styles/title.css">
+    <link rel="stylesheet" href="styles/cover.css" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 
     <meta name="theme-color" content="#fafafa">
@@ -35,57 +22,38 @@ Webpage built and maintained by Harry Minsky and Joey Kinnan (c) 2023
 
 <body>
 
-    <section class="showcase">
+    <div class="cover" style="position: relative;">
+        <img id="albumArt" src="img/DeadLands_Single_Digital.png" />
 
-        <div class="text">
-            <a href="https://linktr.ee/punchlovemusic" target="_blank"><img src="img/gif/linktree.gif" width="100%" height="auto" /></a>
-        </div>
-
-        <section class="textBox">
-            <div class="text">
-                <a href="redirect.html">
-                    <marquee behavior="scroll" direction="down">
-                        <img src="img/punchlove_logo_victoriawinter_top.png" width="100%" height="100%" />
-                    </marquee>
-                </a>                
-            </div>
-
-            <div class="text">
-                <a href="redirect.html"><img src="img/gif/enter.gif" width="100%" height="500vh" /></a>
-
-            </div>
-
-            <div class="text">
-                <a href="redirect.html">
-                    <marquee behavior="scroll" direction="up">
-                        <img src="img/punchlove_logo_victoriawinter_bot.png" width="100%" height="100%" />
-                    </marquee>
-                </a>
-                
-            </div>
-        </section>
-
-        <div class="overlay"></div>
-
-
-
-        <ul class="social">
-        </ul>
-
-    </section>
-    <!--
-    <div class="menu">
-        <ul>
-            <li><img src="img/icons/bandcamp.png" width="10%" height="10%" /></li>
-            <li><img src="img/icons/instagram.png" width="10%" height="10%" /></li>
-            <li><img src="img/icons/spotify.png" width="10%" height="10%" /></li>
-        </ul>
+        <p><i>Dead Lands</i></p>
+        <p>New Single Out Now</p>
     </div>
 
-    -->
+    <div class="linkWrapper" style="position: relative;">
+        <button onclick="window.open('https://open.spotify.com/artist/5Tbdx7OG835TPTxnEgfNiW');"
+                id="musicButton" style="background-color: black; color: green;">
+            SPOTIFY
+        </button>
+        <button id="vizButton" onclick="window.open('https://youtu.be/zpGjIeDqL4w');"
+                style="justify-content: center;">
+            V I S U A L I Z E R
+        </button>
+        <button onclick="window.open('https://music.apple.com/artist/punchlove/1545713753');"
+                id="musicButton" style="color: red;">
+            APPLE MUSIC
+        </button>
+    </div>
+
+    <div class="continue" style="position: relative;">
+        <a href="frontPage.html">
+            <img src="img/gif/continue.gif" />
+        </a>
+    </div>
+
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
+    location
         window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
         ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
     </script>
