@@ -55,8 +55,9 @@
     width: 100%;
     min-height: 100vh;    
     align-items: center;
-    background-image: url("../img/gif/birdsong-gif-crop.gif");
-    background-size: cover;
+    //background-image: url("../img/gif/birdsong-gif-crop.gif");
+    background-image: url("../img/textures/4.jpg");
+    //background-size: cover;
     z-index: 2;
 }
 
@@ -93,6 +94,8 @@
     display: inline-block;
     min-width: 100px;
     max-width: 99%;
+    margin-left: 10vh;
+    margin-right: 10vh;
 
     img {
         opacity: 0.8;
@@ -101,6 +104,29 @@
     img:hover {
         opacity: 1;        
     }
+}
+
+.imgFrame {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    min-width: 100px;
+    max-width: 99%;
+    margin-right: 5vh;
+    margin-left: 5vh;
+
+}
+
+.imgFrameFlip {
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    min-width: 100px;
+    max-width: 99%;
+    transform: scaleX(-1);
+    margin-left: 5vh;
+    margin-right: 5vh;
+
 }
 
 @media (max-width: 700px) {
