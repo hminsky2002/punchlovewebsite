@@ -141,9 +141,19 @@
         width: 65%;
     }
     .text {
+        margin-left: 1vh;
+        margin-right: 1vh;
         img {
             opacity: 1;
         }
+    }
+    .imgFrame {
+        margin-left: 1vh;
+        margin-right: 0;
+    }
+    .imgFrameFlip {
+        margin-right: 1vh;
+        margin-left: 0;
     }
 }
 
