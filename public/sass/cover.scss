@@ -37,7 +37,17 @@
     max-width: 700px;
     padding: 0vh;
     margin: 5vh auto;
-    margin-bottom: 5vh;    
+    margin-bottom: 5vh;
+
+    button {
+        cursor: pointer;
+        font-size: x-large;
+        font-family: 'VCR OSD Mono';
+        color: white;
+        width: 100%;
+        background-image: url("../img/homebutton.png");
+        background-size: 5px;
+    }
 }
 
 p {
