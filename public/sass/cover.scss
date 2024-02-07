@@ -92,10 +92,14 @@ p {
 }
 
 #linkButton {
-    width: 100vh;
-    background-image: url("../img/gif/rainbow.gif");
-    background-size: cover;
+    width: 100%;
+    background-image: url("../img/gif/firepotbar.gif");
+    background-size: contain;
     color: white;
+    font-size: x-large;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 #vizButton {
