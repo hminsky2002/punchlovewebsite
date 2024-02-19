@@ -1,37 +1,21 @@
-﻿body {
+﻿
+// GENERAL STUFF
+
+body {      // background
     background-image: url("../img/gif/swoosh-gif.gif");
     background-size: 220vh;
     background-position: center;
 }
 
-#albumArt {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
+
+p { // general text
+    text-align: center;
+    font-size: x-large;
+    font-family: 'VCR OSD Mono';
+    background-color: white;
 }
 
-#title {
-    width: 100%;
-    max-width: 1000px;
-    height: auto;
-}
-
-#icon {
-    width: 100%;
-    max-width: 50px;
-    height: auto;
-}
-
-.cover {
-    position: absolute;
-    width: 100%;
-    max-width: 1000px;
-    padding: 0vh;
-    margin: 5vh auto;
-    margin-bottom: 5vh;
-}
-
-.cover2 {
+.cover2 { // albumart, title, certain buttons
     position: absolute;
     width: 100%;
     max-width: 700px;
@@ -50,14 +34,45 @@
     }
 }
 
-p {
-    text-align: center;
-    font-size: x-large;
-    font-family: 'VCR OSD Mono';
-    background-color: white;
+///////////////////////////////////////////////////////////////////////////////////////////////
+
+#title {        // PUNCHLOVE banner top of page
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
 }
 
-.wrapperWrapper {
+//////////////////////////////////////////////////////////////////////////////////////////////
+
+// HEADER
+
+#head {     // header links
+    position: center;
+    width: 100%;
+    height: auto;
+}
+
+#heada {        // header margin
+    margin: 3vh 3vh;
+}
+
+#icon {     // header torches
+    width: 100%;
+    max-width: 50px;
+    height: auto;
+}
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+//ALBUM / SINGLE ART & BUTTONS
+
+#albumArt { // album pic format
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+}
+
+.wrapperWrapper {       // album/song wrapper
     position: absolute;
     display: flex;
     justify-content: center;
@@ -65,11 +80,11 @@ p {
     padding: 0vh;
 }
 
-.fill {
+.fill {     // album/song wrapper
     margin: 0 10vh 0 10vh;
 }
 
-.linkWrapper {
+.linkWrapper {      // button wrapper within wrapperwrapper
     position: absolute;
     display: flex;
     justify-content: center;
@@ -87,11 +102,7 @@ p {
     }   
 }
 
-#musicButton {
-    width: 50vh;
-}
-
-#linkButton {
+#linkButton {       // album pre-order link
     width: 100%;
     background-image: url("../img/gif/firepotbar.gif");
     background-size: contain;
@@ -102,28 +113,65 @@ p {
     margin-block-end: 1em;
 }
 
-#vizButton {
+#musicButton {      // for non-cool links
+    width: 50vh;
+}
+
+#vizButton {        // cool links worthy of gif
     width: 100vh;
     background-image: url("../img/gif/rainbow.gif");
     background-size: cover;
     color: white;
 }
 
-.continue {
+/////////////////////////////////////////////////////////////////////////////////////////////
+
+// KINDA RANDOM
+
+.continue {     // holds header, continue button at bottom of page
     position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     padding: 0vh;
     margin: 4vh auto;
 }
 
-@media (max-width: 700px) {
-    .wrapperWrapper {
-        display: initial;
+/////////////////////////////////////////////////////////////////////////////////////
+
+// TOUR TOUR TOUR
+
+.tour {     // tour area
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0vh;
+    margin: 5vh auto;
+}
+
+.column {       // holds different tour columns
+    padding: 3vw 1.5vw;
+    overflow: hidden;
+    white-space: nowrap;
+
+    p {
+        font-size: 2vw;
+        font-family: 'VCR OSD Mono';
     }
 }
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
+// MOBILE!!!
 
+@media (max-width: 700px) {     // mobile formatting
+    .wrapperWrapper {
+        display: initial;
+    }
+    .continue {
+        display: initial;
+    }
+}
