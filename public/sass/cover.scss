@@ -191,4 +191,12 @@ p { // general text
     #head {
         width: 50vh;        
     }
+    .column {
+        p {
+            font-size: 3vw;
+        }
+    }
+    #icon {
+        display: none;
+    }
 }
