@@ -128,7 +128,7 @@ p { // general text
 
 // KINDA RANDOM
 
-.continue {     // holds header, continue button at bottom of page
+.headerrr {     // holds header
     position: absolute;
     display: flex;
     justify-content: center;
@@ -136,6 +136,20 @@ p { // general text
     max-width: 1000px;
     padding: 0vh;
     margin: 4vh auto;
+}
+
+.continue {     // continue button at bottom of page
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0vh;
+    margin: 4vh auto;
+
+    img {
+        width: 50vw;
+    }
 }
 
 /////////////////////////////////////////////////////////////////////////////////////
@@ -171,7 +185,10 @@ p { // general text
     .wrapperWrapper {
         display: initial;
     }
-    .continue {
+    .headerrr {
         display: initial;
+    }
+    #head {
+        width: 50vh;        
     }
 }
