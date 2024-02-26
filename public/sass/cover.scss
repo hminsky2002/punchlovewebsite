@@ -166,14 +166,20 @@ p { // general text
     margin: 5vh auto;
 }
 
-.column {       // holds different tour columns
+.column { // holds different tour columns
     padding: 3vw 1.5vw;
     overflow: hidden;
     white-space: nowrap;
 
     p {
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-family: 'VCR OSD Mono';
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        background-image: url("../img/gif/rainbow.gif");
     }
 }
 
