@@ -191,12 +191,17 @@ p { // general text
 @media (max-width: 700px) {     // mobile formatting
     .wrapperWrapper {
         display: initial;
+        iframe {
+            width: 80%;
+            
+            margin: 10% 10% 3% 10%;
+        }
     }
     .headerrr {
         display: initial;
     }
     #head {
-        width: 50vh;        
+        width: 25vh;      
     }
     .column {
         p {
