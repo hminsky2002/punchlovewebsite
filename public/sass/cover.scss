@@ -4,16 +4,16 @@
 body {      // background
     background-size: 220vh;
     background-position: center;
-    background-color: black;
-    background-image: url("../img/mountainbw.png");
+    background-color: white;
+    background-image: url("../img/gif/static.gif");
+    background-size: auto;
 }
 
-
-p { // general text
+pre { // general text
     text-align: center;
     font-size: x-large;
-    font-family: 'VCR OSD Mono';
-    background-color: white;
+    font-family: Courier New, Courier, monospace;
+    color: crimson;
 }
 
 .cover2 { // albumart, title, certain buttons
@@ -174,14 +174,18 @@ p { // general text
 
     p {
         font-size: 1.5vw;
-        font-family: 'VCR OSD Mono';
+        font-family: Helvetica;
+        color: white;
+        background-color: transparent;
     }
 
     a {
-        text-decoration: none;
-        color: white;
-        background-image: url("../img/gif/rainbow.gif");
+        background-color: transparent;
     }
+}
+
+.UKtour {
+    
 }
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
