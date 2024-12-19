@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>░▒ punchlove.net ▒░</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="description" content="Punchlove the band the website">
+    <meta name="keywords" content="Music, Shoegaze, New York, Punchlove, Band, Indepedent">
+    <meta name="author" content="Punchlove">
+
+    <link rel="stylesheet" href="styles/landingpage.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+
+<body>
+
+    <img id="titleLeft" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; left: 0.1vh; top: 0.1vh;" />
+    <img id="titleRight" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; right: 0.1vh; top: 0.1vh;" />
+
+    <div id="typewriter" class="typewriter"></div>
+    <div id="typewriter2" class="typewriter"></div>
+
+    
+    <a href="links.html" id="Links">Links</a>
+    <a href="MeetTheBand.html" id="More">Meet<br>The<br>Band!</a>   
+    
+    
+    
+    <!--
+    <a href="links.html">
+        <div class="footer" id="Links">
+            <p>Links</p>        
+        </div>
+    </a>    
+    <a href="MeetTheBand.html">
+        <div class="footer" id="More">
+            <p>Meet<br>The<br>Band</p>
+        </div>
+    </a>
+    -->
+
+    <div id="videoBG" onclick="randomAudio()">
+        <video autoplay muted id="cables">
+            <source src="sublimate/cablezoom1sq.mp4" id="cableSource" type="video/mp4">
+        </video>
+    </div>
+    
+    
+    <script>
+
+        //AUDIO
+        const audioFiles = [
+            "music/basements-in-reverse-sample.mp3", "music/bizet-mc-texture-1-(super shiny).mp3",
+            "music/crazy-gran-on-cherokee-(cool-upwards-blooooops).mp3", "music/empire-state-of-ratchet.mp3",
+            "music/ends-cool-textures-(little-creatures-singing).mp3", "music/ends-looper-ambient-(intense).mp3",
+            "music/gypsy-beat-repeat-gran-filters.mp3", "music/isldns-reverse.wav", "music/ka-cho-fu-getsu-long-sample.wav",
+            "music/lilly-sabri.wav", "music/Merry-Orks-sfizz-drum-machine.mp3", "music/overtone-song-seed.mp3",
+            "music/pgran-anaheim.mp3", "music/pgran-shiny-thing.mp3", "music/sick-binaural-moment.wav"
+        ];
+
+        function randomAudio() {
+            const randomIndex = Math.floor(Math.random() * audioFiles.length);
+            const audio = new Audio(audioFiles[randomIndex]);
+            audio.play();
+            console.log(audio);
+        }
+
+        window.onload = randomAudio();
+        //
+
+
+        //TYPEWRITER
+        const text = "more files are coming your way soon...";
+        const text2 = "more files are coming your way soon.";
+        const speed = 48;
+        let i = 0;
+        let j = 0;
+
+        function typeEffect() {
+            const typewriter = document.getElementById("typewriter");
+            const typewriter2 = document.getElementById("typewriter2");
+            if (i < text.length) {
+                typewriter.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, speed);
+            }
+                        
+        }
+        typeEffect();
+        //
+
+
+        //RANDOM WINGDINGS
+        const originalText = "more files are coming your way soon.";
+        const randomizer = document.getElementById("typewriter2");
+
+        function randomizeText(text) {
+            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+            return Array.from(text)
+                .map((char) => (char === " " ? " " : chars.charAt(Math.floor(Math.random() * chars.length))))
+                .join("");
+        }
+
+        function startContinuousScramble(text, interval = 60) {
+            setInterval(() => {
+                randomizer.textContent = randomizeText(text);
+            }, interval);
+        }
+        startContinuousScramble(originalText);
+        //
+        
+    </script>
+
+</body>
+
+<script>
+    var count=1;
+    var player=document.getElementById('cables');
+    var mp4Vid=document.getElementById('cableSource');
+    player.addEventListener('ended',myHandler,false);
+
+    function myHandler(e) {
+        if(!e) {
+            e = window.event;
+        }
+        count++;
+        player.src="sublimate/cablezoom2sq.mp4";
+        player.loop='true';
+    }
+</script>

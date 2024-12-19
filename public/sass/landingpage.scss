@@ -1,0 +1,112 @@
+#titleLeft {
+    display: inline-block;
+    width: 24vh; height: auto;
+    transform: translate(-3vh,6vh) perspective(500px) rotateY(45deg) rotateX(-25deg) rotateZ(-45deg);
+}
+#titleRight {
+    display: inline-block;
+    width: 24vh; height: auto;
+    transform: translate(3vh,6vh) perspective(500px) rotateY(-45deg) rotateX(-25deg) rotateZ(45deg);
+}
+
+#videoBG {
+    position: absolute;
+    display: flex;
+    width: 100%; height: 100%;
+    padding: 0;
+    margin: 0px auto;
+    
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+
+    #cables {
+        height: auto;
+        width: 60%;
+    } 
+}
+
+
+
+.footer {
+    width: 24vh; height: 24vh;
+    background-size: contain;    
+    display: block; 
+    position: absolute; 
+    text-align: center;
+
+    p {
+        color: black;
+        
+    }
+}
+
+#Links {    
+    //background-image: url("../sublimate/cablegif-reverse.gif");
+
+    position: absolute;
+    bottom: 5vh; left: 5vh; 
+
+    font-size: x-large;
+
+}
+#More {    
+    //background-image: url("../sublimate/cablegif.gif");
+
+    position: absolute;
+    bottom: 5vh; right: 5vh; 
+
+    font-size: x-large;
+}
+
+body {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.typewriter {
+    overflow: hidden;
+
+    position: absolute;
+    width: 70%;
+    left: 0;
+    margin-left: 15%; margin-right: 15%;
+}
+
+#typewriter {   
+    top: 10vh;
+    font-size: xx-large; 
+}
+#typewriter2 {    
+    bottom: 10vh;
+    font-size: x-large;
+    font-family: 'Wingdings Regular';
+}
+
+@media (max-width: 1200px) {
+    #videoBG {
+        #cables {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    #titleLeft {
+        transform: translate(-3vh,0) perspective(500px) rotateY(45deg) rotateX(-25deg) rotateZ(0);
+    }
+    #titleRight {
+        transform: translate(3vh,0) perspective(500px) rotateY(-45deg) rotateX(-25deg) rotateZ(0);
+    }
+
+    #videoBG {
+        #cables {
+            width: 100%;
+        }
+    }
+
+    #typewriter { top: 15vh; }
+    #typewriter2 { bottom: 20vh; }
+}
+

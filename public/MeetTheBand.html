@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>░▒ punchlove.net ▒░</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="description" content="Punchlove the band the website">
+    <meta name="keywords" content="Music, Shoegaze, New York, Punchlove, Band, Indepedent">
+    <meta name="author" content="Punchlove">
+
+    <link rel="stylesheet" href="styles/MeetTheBand.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head>
+<body onload="load()">
+
+    <img id="title" src="img/gif/punchlove-vhs-black.gif" style="display: block; width: 10vw; max-width: 1000px; height: auto; margin-left: auto; margin-right: auto;" />
+
+    <div class="meettheband">
+        <img src="img/gif/dancingcodetrans.gif" />
+
+        <div class="center">
+            <div class="header">
+                <img src="img/gif/disco.gif" style="margin: auto; margin-right: 2vh;" />
+                <h1>Meet the Band</h1>
+                <img src="img/gif/disco.gif" style="margin: auto; margin-left: 2vh;" />
+            </div>
+
+            <embed id="member" src="https://thispersondoesnotexist.com/" />
+            <div class="personfooter">
+                <input type="image" value="Reload" onclick="reload()" src="img/gif/arrow.gif" alt="Submit" style="transform: scaleX(-1); margin: auto; margin-right: 5vh;">
+                <h2 id="name"></h2>
+                <input type="image" value="Reload" onclick="reload()" src="img/gif/arrow.gif" alt="Submit" style="margin: auto; margin-left: 5vh;">
+
+            </div>
+        </div>
+        <img src="img/gif/dancingcodetrans.gif" style="transform: scaleX(-1);" />
+    </div>
+
+    <a href="psych.html">
+        <div class="leaks">
+            <img src="img/gif/locust.gif" style="width: 5vh; height: 5vh; " />
+            <p>CLICK TO DOWNLOAD<br />Punchlove Leaks...</p>
+        </div>
+    </a>
+    
+
+
+    <script>
+        function reload() {
+
+            //reload thisPersonDoesNotExist
+            document.getElementById("member").src = "https://thispersondoesnotexist.com/" 
+
+            //random name generator:
+            const nameList = ["Esther", "Ethan", "Michael", "Emma", "Margaret", "Joseph", "Olivia", "Amanda", "Solomon", "Charlie", "Christina", "Marcus", "June", "Rowan", 
+            "Barbara", "Sean", "Stella", "Ryan", "Sylvia", "Talia", "Nicole", "Julia", "Mordecai", "Jenna", "Leora", "Goldy", "Margot", "Lana", "Liliana", "Nico", "Annabel", 
+            "Hudson", "Lena", "Nicholas", "Tyler", "David", "Benjamin", "Jacob", "Jakub", "Daisy", "Thomas", "Lucas", "Micah", "Matilda", "Christopher", "Jax", "Bryce", "Leah", 
+            "Frank", "Dennis", "Samantha", "Jenna", "Leora", "Goldy", "Jackson", "Catherine", "Greyson", "Jesse", "Felix", "Gavin", "Beckett", "Amelia", "Kenneth", "Noah", 
+            "Victoria", "Devin", "James", "Carter", "Hannah", "Hunter", "Bradley", "Aubrey", "Alice", "Zachary", "Oliver", "Ellie", "Daniel", "Angelina", "Grant", "Henry", 
+            "Eric", "Erik", "Natalia", "Riley", "Jordan", "Lorenzo", "Wolf", "Gabriel", "Beatrix", "Reese", "Salvatore"];
+
+            const index = Math.floor(Math.random() * nameList.length);
+            const name = nameList[index];
+
+            const nameElement = document.getElementById("name");
+            nameElement.innerText = name;
+            
+        }
+
+        function load() {
+
+            //reload thisPersonDoesNotExist
+            //document.getElementById("member").src = "https://thispersondoesnotexist.com/" 
+
+            //random name generator:
+            const nameList = ["Esther", "Ethan", "Michael", "Emma", "Margaret", "Joseph", "Olivia", "Amanda", "Solomon", "Charlie", "Christina", "Marcus", "June", "Rowan", 
+            "Barbara", "Sean", "Stella", "Ryan", "Sylvia", "Talia", "Nicole", "Julia", "Mordecai", "Jenna", "Leora", "Goldy", "Margot", "Lana", "Liliana", "Nico", "Annabel", 
+            "Hudson", "Lena", "Nicholas", "Tyler", "David", "Benjamin", "Jacob", "Jakub", "Daisy", "Thomas", "Lucas", "Micah", "Matilda", "Christopher", "Jax", "Bryce", "Leah", 
+            "Frank", "Dennis", "Samantha", "Jenna", "Leora", "Goldy", "Jackson", "Catherine", "Greyson", "Jesse", "Felix", "Gavin", "Beckett", "Amelia", "Kenneth", "Noah", 
+            "Victoria", "Devin", "James", "Carter", "Hannah", "Hunter", "Bradley", "Aubrey", "Alice", "Zachary", "Oliver", "Ellie", "Daniel", "Angelina", "Grant", "Henry", 
+            "Eric", "Erik", "Natalia", "Riley", "Jordan", "Lorenzo", "Wolf", "Gabriel", "Beatrix", "Reese", "Salvatore"];
+
+            const index = Math.floor(Math.random() * nameList.length);
+            const name = nameList[index];
+
+            const nameElement = document.getElementById("name");
+            nameElement.innerText = name;
+
+        }
+    </script>
+    
+</body>
+</html>

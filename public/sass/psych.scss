@@ -1,0 +1,40 @@
+body {
+    background-image: url("../img/gif/locust.gif"), url("../img/textures/4.jpg");
+    background-size: auto, 8px 5px;
+    
+}
+
+.popup {
+    background-color: rgb(51,255,51);
+    background-image: url("../img/window.png");
+    background-size: contain;
+    width: 87.54vh;
+    height: 60vh;
+    display:block;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    top: 10vh;
+}
+
+.popup2 {
+    width: 84.864vh;
+    height: 51.799vh;
+    position: absolute;
+    left: 1.381vh;
+    top: 6.82vh;
+
+    h1 {
+        font-size: 6vh;
+    }
+    p {
+        font-size: 3vh;
+    }
+}
+
+.tag {
+    p {
+        display: inline;
+    }
+    
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>░▒ punchlove.net ▒░</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <meta name="description" content="Punchlove the band the website">
+    <meta name="keywords" content="Music, Shoegaze, New York, Punchlove, Band, Indepedent">
+    <meta name="author" content="Punchlove">
+
+    <link rel="stylesheet" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+
+    <style>
+        body {
+            display: flex;
+            justify-content: left;
+            height: 100vh;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+
+        .typewriter {
+            font-size: 1.5rem;
+            
+            white-space: nowrap;
+            overflow: hidden;
+            margin-bottom: 0.5rem;
+            margin-left: 1rem; margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" style="position: relative">
+        <div id="typewriter-container" style="position: absolute"></div>
+        <div id="link-container" style="position: absolute; display: none;">
+            <div class="typewriter"><a target="_blank" href="https://punchlove.bandcamp.com/merch">Merch</a></div>
+            <div class="typewriter"></div>
+            <div class="typewriter">Physical:</div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://punchlove.bandcamp.com/album/channels">BandCamp</a></div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.kaninerecords.com/product/channels">Kanine</a></div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://pleasuretapes.myshopify.com/products/channels-by-punchlove-ltd-10">Pleasure Tapes</a></div>
+            <div class="typewriter"></div>
+            <div class="typewriter">Streaming:</div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://open.spotify.com/album/0fROkij27KLAQl0uUTFS2e?si=hoo9cnRfThaS0WE94Er4rQ'">Spotify</a></div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://music.apple.com/us/album/channels/1713374727">Apple</a></div>
+            <div class="typewriter">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="https://www.youtube.com/watch?v=t0xupGC7MbM">YouTube</a></div>
+            <div class="typewriter"></div>
+            <div class="typewriter"><a target="_blank" href="https://www.instagram.com/punchlovemusic/">Instagram</a></div>
+            <div class="typewriter">booking@punchlove.net</div>
+        </div>
+    </div>
+
+    <script>
+        const lines = [
+            "Merch",
+            " ",
+            "Physical:",
+            "\xa0\xa0\xa0\xa0\xa0\xa0BandCamp",
+            "\xa0\xa0\xa0\xa0\xa0\xa0Kanine",
+            "\xa0\xa0\xa0\xa0\xa0\xa0Pleasure Tapes",
+            " ",
+            "Streaming:",
+            "\xa0\xa0\xa0\xa0\xa0\xa0Spotify",
+            "\xa0\xa0\xa0\xa0\xa0\xa0Apple",
+            "\xa0\xa0\xa0\xa0\xa0\xa0YouTube",
+            " ",
+            "Instagram",
+            "booking@punchlove.net"
+        ];
+
+        const speed = 24;
+        const linePause = 24;
+        const container = document.getElementById("typewriter-container");
+        const links = document.getElementById("link-container");
+
+        let lineIndex = 0;
+        let charIndex = 0;
+
+        function typeLine() {
+            if (lineIndex < lines.length) {
+                let lineElement = document.createElement("div");
+                lineElement.className = "typewriter";
+                container.appendChild(lineElement);
+
+                let currentLine = lines[lineIndex];
+                let interval = setInterval(() => {
+                    if (charIndex < currentLine.length) {
+                        lineElement.textContent += currentLine.charAt(charIndex);
+                        charIndex++;
+                    } else {
+                        clearInterval(interval);
+                        lineIndex++; charIndex = 0;
+                        setTimeout(typeLine, linePause);
+                    }
+                }, speed);
+            } else {
+                links.style.display = 'block';
+                container.style.display = 'none';
+            }
+
+            
+        }
+
+        typeLine();
+    </script>
+</body>
