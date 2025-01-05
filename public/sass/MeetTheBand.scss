@@ -1,0 +1,67 @@
+﻿body {
+    background-image: url("../img/gif/static-inv.gif");
+    color: black;
+    font-family: 'Times New Roman';
+
+    #title { transform: scaleX(-1); }
+
+    .meettheband {
+        display: flex;
+        justify-content: center;
+
+        img { margin-top: 1vh; }
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        height: 7vw;
+        margin-bottom: 32px;
+
+        img { height: 75%; }
+    }
+
+    h1 {
+        //font-family: 'Erin Go Bragh 3D';
+        font-size: 3.5vw;
+        text-align: center;
+        margin: 0;
+    }
+
+    #memberDiv {
+        display: block;
+        margin: auto;
+        width: 1024px;
+        height: 1024px;
+        zoom: 0.4;
+        border: 20px ridge black;
+    }
+    embed { width: 1024px; height: 1024px; }
+
+    h2 {
+        //font-family: 'Erin Go Bragh 3D';
+        font-size: 1.5em;
+        text-align: center;
+        width: 18vh;
+    }
+
+    .personfooter { display: flex; justify-content: center; }
+
+    .leaks { display: flex; justify-content: right; }
+}
+
+@media (max-width: 1100px) { body {
+    #sideGirl {
+        display: none;
+    }
+    
+}}
+@media (max-width: 1000px) { body {
+    h1 { font-size: 5vw; }
+}}
+@media (max-width: 500px) { body { 
+    #memberDiv {
+        zoom: 0.3;
+    }
+}}
+
