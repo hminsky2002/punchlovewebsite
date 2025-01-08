@@ -3,6 +3,10 @@
     color: black;
     font-family: 'Times New Roman';
 
+    #back {
+        position: absolute;
+        left: 2vh; top: 2vh;
+    }
     #title { transform: scaleX(-1); }
 
     .meettheband {
