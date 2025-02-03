@@ -123,7 +123,7 @@ body {
     #videoBG { #cables { width: 100%; } }
 
     #typewriter { top: 15vh; font-size: x-large; }
-    #typewriter2 { font-size: large; }
+    #typewriter2 { font-size: medium; bottom: 6vh; } 
     #scroll { 
         font-size: 2.5vw; 
         left: 5%; transform: translate(0);
@@ -131,6 +131,10 @@ body {
 
     .vidWrapper iframe{
         width: 82%; margin-left: 9%; margin-right: 9%; margin-top: 4vh;
+    }
+
+    .linkParent {
+        margin-top: 20vh;
     }
 }
 
