@@ -38,6 +38,17 @@ html { scroll-behavior: smooth;
     } 
 }
 
+.vidWrapper {
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    top: 12vh;
+
+    iframe {
+        border: #0a0a0a solid 10px;
+    }
+}
+
 .bottomtext { 
     font-size: x-large;
     a:link { color: #0a0a0a; }
@@ -46,7 +57,7 @@ html { scroll-behavior: smooth;
 .linkParent { 
     display: flex;
     justify-content: space-between;
-    margin-top: 74vh;
+    margin-top: 24vh;
     margin-left: 4vw; margin-right: 4vw;
     margin-bottom: 2vh;
 }
@@ -116,6 +127,10 @@ body {
     #scroll { 
         font-size: 2.5vw; 
         left: 5%; transform: translate(0);
+    }
+
+    .vidWrapper iframe{
+        width: 82%; margin-left: 9%; margin-right: 9%; margin-top: 4vh;
     }
 }
 
