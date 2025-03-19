@@ -53,6 +53,7 @@ html { scroll-behavior: smooth;
     font-size: x-large;
     a:link { color: #0a0a0a; }
     a:visited { color: #0a0a0a; }
+    margin-bottom: 2vh;
  }
 .linkParent { 
     display: flex;
@@ -88,7 +89,7 @@ body {
 
 #scroll {
     position: absolute;
-    left: 50%; top: 100%; transform: translate(-50%, 0);
+    left: 50%; top: 104%; transform: translate(-50%, 0);
     font-size: 1.5vw;
     color: whitesmoke;
     a {  font-family: 'Courier New', Courier, monospace;
@@ -97,7 +98,7 @@ body {
     a:visited { color: whitesmoke; }
     a:hover { color: crimson; }
     padding: 1.5vw 3vw 1.5vw 3vw;
-    margin-top: 2vh;
+    margin-bottom: 2vh;
     background-color: #111214;
     background-image: url(../img/hole-gradient2.png);
     background-size: cover;
