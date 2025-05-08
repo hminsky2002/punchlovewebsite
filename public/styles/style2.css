@@ -1,0 +1,59 @@
+/* CSS files add styling rules to your content */
+
+body, html {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px;    
+  }
+  
+  button {
+    display: inline-block;
+    font-size: 36px;
+    padding: 10px 60px;
+    margin: 32px;
+  }
+
+  .header { 
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+    padding: 0vh;
+    margin: 4vh auto;
+
+  }
+  
+  main {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  
+  main > * {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  #iphoneCanvas {
+    z-index: 1;
+    background-image: url("/img/iphone3.png");
+    width: 100%; height: 100%;
+    background-position: 0 0;
+    animation: myMove 10s linear infinite;    
+  }
+
+  @keyframes myMove {
+    from {background-position: 0 0}
+    to {background-position: 3600px 0;}
+  }
+
+  #hydraCanvas {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  

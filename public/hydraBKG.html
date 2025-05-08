@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>hydra inside a webpage</title>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- import the webpage's stylesheet -->
+        <link rel="stylesheet" href="./styles/style2.css" />
+        
+        <!-- import the latest version of hydra synth-->
+        <script src="https://unpkg.com/hydra-synth"></script>
+        <script src="./scripts/hydra1.js" defer></script>
+    </head>
+
+    <body>
+
+        <canvas id="iphoneCanvas" style="visibility: visible;"></canvas>
+        <canvas id="hydraCanvas"></canvas>
+
+        <main>
+            
+            <div class="header" id="continue" style="font-size:xx-large" onclick="fadeOut(hide)"> CONTINUE&nbsp&gt&gt </div>
+
+            <div class="header" id="buttons" style="top:20vh">
+                <button onclick="k=2" style="box-shadow: 1vw -2vh 10px black;"> 2 </button>
+                <button onclick="k=3" style="box-shadow: 0.5vw -1.5vh 10px black;"> 3 </button>
+                <button onclick="k=4" style="box-shadow: 0 -1vh 10px black;"> 4 </button>
+                <button onclick="k=7" style="box-shadow: -0.5vw -1.5vh 10px black;"> 7 </button>
+                <button onclick="k=42" style="box-shadow: -1vw -2vh 10px black; padding:10px 60px"> 42 </button>
+            </div>
+                        
+        </main>
+
+    </body>
+
+
+
+</html>

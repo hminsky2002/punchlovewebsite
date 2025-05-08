@@ -19,37 +19,47 @@
 </head>
 
 <body>
+    
+    <div class="title">
+        <img id="titleLeft" src="img/gif/punchlove-vhs-black.gif" />
+        <img id="titleRight" src="img/gif/punchlove-vhs-black.gif" />
+    </div>
 
-    <img id="titleLeft" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; left: 0.1vh; top: 0.1vh;" />
-    <img id="titleRight" src="img/gif/punchlove-vhs-black.gif" style="position: absolute; right: 0.1vh; top: 0.1vh;" />
+    <div class="vidWrapper">
+       
+
+        <iframe width="700" height="400" src="https://www.youtube.com/embed/Sg3GcQgRkUc" 
+            title="" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    
+
+    
 
     <div id="typewriter" class="typewriter"></div>
     <div id="typewriter2" class="typewriter"></div>
 
-    
-    <a href="links.html" id="Links">Links</a>
-    <a href="MeetTheBand.html" id="More">Meet<br>The<br>Band!</a>   
-    
-    
-    
-    <!--
-    <a href="links.html">
-        <div class="footer" id="Links">
-            <p>Links</p>        
+    <div class="bottomtext">
+        <div class="linkParent">
+            <a href="links.html" id="Links">< Links</a>
+            <a href="MeetTheBand.html" id="More">Meet The Band ></a> 
         </div>
-    </a>    
-    <a href="MeetTheBand.html">
-        <div class="footer" id="More">
-            <p>Meet<br>The<br>Band</p>
-        </div>
-    </a>
-    -->
+    </div>
 
     <div id="videoBG" onclick="randomAudio()">
         <video autoplay muted id="cables">
             <source src="sublimate/cablezoom1sq.mp4" id="cableSource" type="video/mp4">
         </video>
     </div>
+
+    
+
+    
+    
+
+    
     
     
     <script>
@@ -76,8 +86,8 @@
 
 
         //TYPEWRITER
-        const text = "more files are coming your way soon...";
-        const text2 = "more files are coming your way soon.";
+        const text = "Today you can learn the secret.....";
+        const text2 = "Today you can learn the secret.....";
         const speed = 48;
         let i = 0;
         let j = 0;
@@ -97,11 +107,12 @@
 
 
         //RANDOM WINGDINGS
-        const originalText = "more files are coming your way soon.";
+        const originalText = "(sublimate) out now on all platforms";
         const randomizer = document.getElementById("typewriter2");
 
         function randomizeText(text) {
-            const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()";
+            //const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()"; 
+            const chars = "🖉✂✁🕭🕮🕿✆🖂🗏🗐🗄🖮🖰🖲☜☞☟☺☹☠🏳🏱✈☼❄🕆✞🕈✠✡☪🙰🙵●🔾■□🞐❑❒⬧⧫◆❖⬥⌧⮹⌘";
             return Array.from(text)
                 .map((char) => (char === " " ? " " : chars.charAt(Math.floor(Math.random() * chars.length))))
                 .join("");
