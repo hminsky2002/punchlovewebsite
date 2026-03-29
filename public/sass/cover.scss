@@ -1,19 +1,34 @@
 ﻿
+@font-face {
+    font-family: AGBold;
+    src: url("../fonts/Avant\ Garde\ Bold.ttf");
+}
+
+@font-face {
+    font-family: AGDemi;
+    src: url("../fonts/ITCAvantGardeStd-Demi.otf");
+}
+
 // GENERAL STUFF
 
 body {      // background
     background-size: 220vh;
     background-position: center;
-    background-color: white;
-    background-image: url("../img/gif/static2.gif");
+    background-color: orangered;
+    //background-image: url("../img/gif/static2.gif");
     background-size: auto;
 }
 
 pre { // general text
-    text-align: center;
-    font-size: x-large;
-    font-family: Courier New, Courier, monospace;
-    color: blue;
+    //text-align: center;
+    font-size: medium;
+    //font-family: Arial, Helvetica, sans-serif;
+    font-family: AGDemi;
+    color: white;
+}
+
+.pil {
+    width: 33%;
 }
 
 .cover2 { // albumart, title, certain buttons
@@ -71,12 +86,31 @@ pre { // general text
     height: auto;
 }
 
-.wrapperWrapper {       // album/song wrapper
+.videoWrapper {       // album/song wrapper
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin: 5% auto;
+    padding: 0vh;
+}
+
+.tourWrapper {       // album/song wrapper
     position: absolute;
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 0vh;
+    width: 60%;
+    margin: auto 20%;
+}
+
+.divider {
+    img {
+        width: 60%; margin: 2vh 20%;
+    }
+    
+    
 }
 
 .linkWrapper {      // button wrapper within wrapperwrapper
@@ -234,17 +268,36 @@ main {
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 
 // MOBILE!!!
-
+@media (max-width: 800px) { pre {
+        font-size: small;
+    }}
 @media (max-width: 700px) {     // mobile formatting
-    .wrapperWrapper {
+    .videoWrapper {
         display: grid;
-        width: 100%;
+        width: 90%;
         height: fit-content;
-        margin: 3vh 0;
+        margin: 3vh 5%;
         iframe {
             width: 100%; height: 100%;
         }
     }
+    .tourWrapper {
+        //display: grid;
+        width: 94%;
+        height: fit-content;
+        margin: 3vh 3%;
+        iframe {
+            width: 100%; height: 100%;
+        }
+    }
+    .divider {
+        img {
+            width: 94%;
+        margin: 2vh 3%;
+        }
+        
+    }
+    
     #topBanner { font-size: medium;
         div { margin: 0 1vw; } }
     #announcement { font-size: x-large; margin: 0; }
@@ -263,4 +316,9 @@ main {
     #sublimate { margin-right: 0; margin-bottom: 7vh; }
     #tyclts { margin-left: 0; margin-top: 7vh; }
     #dash { top: 8vh; }
+}
+
+@media (max-width: 400px) {
+    pre { font-size: x-small; }
+    #topBanner { font-size: small;}
 }
