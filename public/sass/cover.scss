@@ -106,6 +106,10 @@ pre { // general text
     margin: auto 20%;
 }
 
+.overlay {
+    a { text-decoration: none; }
+}
+
 .divider {
     img {
         width: 60%; margin: 2vh 20%;
@@ -201,15 +205,6 @@ pre { // general text
 
     a {
         background-color: transparent;
-    }
-}
-
-.UpcomingShows {
-    a:link {
-        color: blue;
-    }
-    a:visited {
-        color: blue;
     }
 }
 
