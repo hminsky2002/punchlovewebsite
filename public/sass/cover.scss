@@ -9,6 +9,16 @@
     src: url("../fonts/ITCAvantGardeStd-Demi.otf");
 }
 
+@font-face {
+    font-family: MONO;
+    src: url("../fonts/SpaceMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: MONO-bold;
+    src: url("../fonts/SpaceMono-Bold.ttf");
+}
+
 // GENERAL STUFF
 
 body {      // background
@@ -57,7 +67,7 @@ pre { // general text
         margin: 0 2vw;
     }
 }
-#topBanner { font-size: x-large; }
+#topBanner { font-size: large; }
 #announcement { font-size: xx-large; }
 
 
