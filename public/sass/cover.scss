@@ -117,7 +117,8 @@ pre { // general text
 }
 
 .overlay {
-    a { text-decoration: none; }
+    a { text-decoration: none; pre{ transition: 0.35s; } }
+    a:hover { pre { background-color: rgba(0, 0, 255, 0.181); } }
 }
 
 .divider {
